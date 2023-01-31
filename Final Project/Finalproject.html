@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Finalproject.css">
+</head>
+
+<body>
+
+    <!-- Kako da stavim dynamic text da se ispisuje na hartiji, a da ne pomerim header background? Pretpostavljam da treba da koristim flex i absolute i relative osobinu (ali mi nesto fali u postavci- da li header i container mozda treba staviti u div pa onda)?
+
+    Kako da taj tekst ne ispisuje iz jednog dela vec deo po deo (odnosno da mu ne uzme kursor celu visinu)?
+-->
+    
+<header class="header">
+
+        <a href="#" ><img src="dplogo.jpg" class="logo"></a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li> <a href="#">About me</a> </li>
+                <li><a href="#">Services</a></li>
+                <li> <a href="#">Contact me</a></li>
+
+
+            </ul>
+        </nav>
+   
+
+   <div class="container">
+            <ul class="dynamic-text">
+
+                <li>Hello,</li>
+                <li>my name is John Doe.</li>
+                <br>
+                <li>I'm a graphic designer.</li>
+
+
+
+            </ul>
+
+        </div>
+
+    </header>
+    <!--  <div class="row">
+        <ul class="dynamic-text">
+
+            <li>Hello,</li>
+            <li>my name is John Doe.</li>
+            <br>
+            <li>I'm a graphic designer.</li>
+
+        </ul>
+    </div></div>-->
+
+    <div class="col">
+
+        <div class="card" >
+            <h5>Labels</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="card" id="carditem1">
+            <h5>Logos</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="card" id="carditem2">
+            <h5>Business cards</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="card" id="carditem3">
+            <h5 >Educational cards</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
