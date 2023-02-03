@@ -1,0 +1,320 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(12, 12, 12);
+  color: white;
+  
+}
+.header {
+  width: 100%;
+  height: 80vh;
+  background-image: url("nesto.jpg");
+  background-size: cover;
+  background-repeat: no repeat;
+  padding: 0 8.5%;
+  /*position:relative;*/
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 0 10px;
+}
+
+.logoimg {
+  /* padding: 30px 0 10px;*/
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  top: 30px;
+}
+
+img {
+  width: 100px;
+  border: 3px solid white;
+  margin-top: 3px;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+
+nav ul li a {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(236, 233, 233);
+  background-color: rgb(58, 56, 53);
+  opacity: 90%;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  color: rgb(234, 167, 53);
+}
+/*.container{
+  display: inline-block;
+  font-family: "arial";
+  font-size: 24px;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 1.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+  
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}*/
+
+.text-box {
+  top: 190px;
+  left: 550px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-6deg);
+}
+
+.text-box h1 {
+  font-size: 45px; /*bilo je 75px*/
+  line-height: 160px;
+}
+
+.biography {
+  color: rgb(10, 10, 10);
+  font-size: 22px;
+  text-align: right;
+}
+
+.text-box a {
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 6px;
+  color: black;
+  border: 2px solid rgb(255, 89, 0);
+  padding: 10px 30px;
+  text-decoration: none;
+  margin-left: 220px;
+  
+}
+
+
+
+.text-box .btn {
+  background: white;
+  color: rgb(30, 30, 32);
+  margin-left: 30px;
+  font-weight: 600;
+  margin-top: 200px;
+  transform-origin: 0 0;
+  transform: rotate(6deg);
+}
+.btn:hover{
+  transform: scale(0.9);
+}
+
+.btncontact:hover{
+  transform: rotate(10deg);
+}
+
+.about-img img {
+  width: 500px;
+  margin-top: 70px;
+ border-radius: 8px;
+ border: 5px solid rgb(220, 118, 23);
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: rgb(27, 26, 26);
+  text-shadow: 2px 2px #ebdddc;
+}
+
+
+.about-text {
+  position: absolute;
+  color: white;
+  font-size: 27px;
+  text-align: left;
+  top: 50px;
+  left: 520px;
+  margin-top: 70px;
+}
+
+.about-text h2{
+  font-size: 35px;
+}
+
+.about-text h2 span {
+ 
+    color: rgb(220, 118, 23);
+    
+}
+
+
+
+
+.about {
+  position: relative;
+}
+
+.main-text h2 span {
+  color: rgb(220, 118, 23);
+}
+
+
+.btn1 {
+  font-size: 30px;
+  padding: 30px 70px;
+  background-color:  rgb(220, 118, 23);
+  color:white;
+
+}
+
+.main-text {
+  text-align: center;
+}
+
+.main-text p {
+  color: white;
+font-size: 15px;
+margin-bottom:30px ;
+}
+
+.main-text h2 {
+  font-size: 20px;
+}
+
+.box {
+  background:rgb(220, 118, 23); 
+  opacity: 70%;
+  padding:30px 50px;
+  border-radius: 8px;
+  transition: all .45s ease;
+  border: 3px solid black;
+}
+
+ .box {
+
+  font-size: 20px;
+  
+}
+
+.box h3{
+  color: black;
+}
+
+.box .btn {
+  color: white;
+  padding: 50px;
+}
+
+button {
+  padding: 30px;
+  background-color: black;
+
+}
+
+
+
+.portfolio p {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.portfolio h3{
+  font-size: 30px;
+  text-align: center;
+  
+}
+
+.portfolio .latest-color{
+  color:rgb(220, 118, 23) ;
+}
+
+.slider1 {
+  position: relative;
+  align-items: center;
+  }
+
+.slider {position: absolute;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite;
+top: 400px;
+left:43%;
+
+}
+
+@keyframes rotate{
+  0%{
+    transform: perspective(1000px) rotateY(0deg);
+   }
+    100%
+     {
+      
+      transform: perspective(1000px) rotateY(360deg);
+    
+    }
+}
+ .slider span {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height:100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i)*51deg)) translateZ(350px);
+
+ }
+
+ .slider span img {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-radius: 100px;
+  object-fit:cover;
+  transition: 2s;
+ }
+
+.slider  span:hover img {
+  transform: translateY(-50px) scale(1.2);
+ }
+
+ 
+
+ 
